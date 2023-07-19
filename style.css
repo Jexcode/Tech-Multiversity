@@ -10,7 +10,7 @@
   --text-color: #696773;
   --text-wht-color: #fff;
   --glass-white: rgba(225, 225, 225, 0.3);
-  --nav-h: 10vh;
+  --nav-h: 15%;
   
   /* fonts */
   --ff-primary: 'Poppins', sans-serif;
@@ -145,7 +145,7 @@ input, button, textarea, select {
   padding: 1% 3%;
   font-size: calc(var(--ff-s-fs) + 0.2rem);
   font-weight: var(--ff-w-600);
-  background: var(--main-primary-color);
+  background: var(--main-secondary-color);
   color: var(--text-wht-color);
   border-radius: calc(var(--ff-xs-fs) - 0.4rem);
   /* width: 130px; */
@@ -189,6 +189,7 @@ header{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 9999;
   /* filter: drop-shadow(10px 10px 5px #333); */
 }
 
@@ -203,7 +204,7 @@ header .fa-solid {
 }
 
 header nav .navbar{
-  
+  --nav-h: ;
   
   background: var(--lg-bg-color);
   height: calc(100vh - var(--nav-h));
@@ -435,6 +436,10 @@ header .navbar .nav-btn-fld .nav-btn:last-child:hover{
 
 .opp-con .cardbox .cardbox-text{
   padding: 2%;
+}
+
+.opp-con .cardbox .cardbox-text h3{
+  font-size: var(--ff-m-fs);
 }
 
 #opportunity .pBtn{
@@ -702,6 +707,7 @@ header .navbar .nav-btn-fld .nav-btn:last-child:hover{
   padding: 1% 1% 1% 2%;
   position: relative;
   margin-bottom: 3%;
+  z-index: -1;
 }
 
 #about .about-two .about-why .highlg:before{
@@ -752,9 +758,6 @@ header .navbar .nav-btn-fld .nav-btn:last-child:hover{
 
 
 #faq .faq-con .faq-item .question{
-  font-size: var(--ff-s-fs);
-  font-weight: var(--ff-w-600);
-  margin: 0.4% auto;
   line-height: 1.2;
   padding: 1% 3%;
   position: relative; 
@@ -762,6 +765,9 @@ header .navbar .nav-btn-fld .nav-btn:last-child:hover{
 
 
 #faq .faq-con .faq-item .question h4{
+  font-size: var(--ff-s-fs);
+  font-weight: var(--ff-w-600);
+  margin: 0.4% auto;
   padding-right: 1%;
 }
 
@@ -835,7 +841,6 @@ footer .ft-center {
 
 
 @media screen and (min-width: 900px) {
-
   #faculty .faculty-con {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
@@ -884,10 +889,24 @@ footer .ft-center {
 }
 
 }
-
-/*  @media screen and (min-height: 1040px){
-    :root{
-    --nav-h: 15vh;
+@media screen and (min-width: 320px){
+  :root{
+    ff-xs-fs: .55rem;
+  --ff-s-fs: .75rem;
+  --ff-m-fs: .9rem;
+  --ff-lg-fs: 1.2rem;
+  }
+  
+  .pBtn{
+    font-size: (var(--ff-s-fs));
+  }
+  
+  h3{
+    font-size: calc(var(--ff-m-fs) + 0.2rem);
+  }
+  
+  .pagination span{
+    height: 7px;
+    width: 7px;
+  }
 }
-} */
-             
