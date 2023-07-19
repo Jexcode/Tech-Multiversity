@@ -12,13 +12,9 @@ const faCult = document.querySelector('#faculty');
 function showMenu() {
   if (menuBar.style.right === '-100vw') {
     menuBar.style.right = '0vw';
-    welCome.style.zIndex = '-1';
-    faCult.style.zIndex = '-1';
   } 
   else {
     menuBar.style.right = '-100vw';
-    welCome.style.zIndex = 'auto';
-    faCult.style.zIndex = 'auto';
   }
 };
 
