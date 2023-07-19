@@ -10,7 +10,7 @@
   --text-color: #696773;
   --text-wht-color: #fff;
   --glass-white: rgba(225, 225, 225, 0.3);
-  --nav-h: 10vh;
+  --nav-h: 15%;
   
   /* fonts */
   --ff-primary: 'Poppins', sans-serif;
@@ -210,7 +210,7 @@ header nav .navbar{
   flex-direction: column;
   padding: 0;
   position: fixed;
-  top: var(--nav-h);
+  top: calc(var(--nav-h) * 2);
   right: -100vw;
   list-style: none;
   transition: all 1s ease;
