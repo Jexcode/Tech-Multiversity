@@ -889,7 +889,7 @@ footer .ft-center {
 }
 
 }
-@media screen and (min-width: 320px){
+@media screen and (max-width: 450px){
   :root{
     ff-xs-fs: .55rem;
   --ff-s-fs: .75rem;
