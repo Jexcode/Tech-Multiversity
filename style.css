@@ -850,7 +850,7 @@ footer .ft-center {
   }
   
   #faculty .faculty-border {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
   }
   
   .faculty-con .faculty-card{
