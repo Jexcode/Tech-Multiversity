@@ -105,7 +105,7 @@ setInterval(() => {
   currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
   showSlide();
   updatePagination();
-}, 5000);
+}, 10000);
 
 // Initial setup
 showSlide();
@@ -199,7 +199,7 @@ setInterval(() => {
   currentSlide1 = (currentSlide1 === slides1.length - 1) ? 0 : currentSlide1 + 1;
   showSlidE();
   updatePaginatioN();
-}, 5000);
+}, 10000);
 
 // Initial setup
 showSlidE();
