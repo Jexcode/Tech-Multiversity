@@ -2,8 +2,11 @@
 :root{
   --main-primary-color: #3AADED;
   --main-secondary-color: #D90909;
+  /* --main-secondary-color: rgba(190, 60, 25, 1); */
   --border-color: #B02E0C;
   --dk-bg-color: #392F5A;
+  --dk-bg-color: #044367;
+  /* --dk-bg-color: #53729d; */
   --text-color: #EFF1F3;
   --lg-bg-color: #EBEEF2;
   --lg-pinkbg-color: #F3E8EE;
@@ -204,6 +207,7 @@ header .fa-solid {
 }
 
 header nav .navbar{
+  --nav-h: ;
   
   background: var(--lg-bg-color);
   height: calc(100vh - var(--nav-h));
@@ -606,7 +610,8 @@ header .navbar .nav-btn-fld .nav-btn:last-child:hover{
 
 .course-con .course-img{
   margin-inline: auto;
-  width: 50%;
+  padding: 2% 4%;
+  width: 100%;
 }
 
 .course-con .course-img img{
@@ -845,7 +850,7 @@ footer .ft-center {
   }
   
   #faculty .faculty-border {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
   }
   
   .faculty-con .faculty-card{
@@ -872,6 +877,10 @@ footer .ft-center {
  .course-con .course-text{
    text-align: left;
  }
+ 
+ .course-con .course-img {
+   width: 60%;
+ }
 
 
 .about-one .about-one-con {
@@ -888,6 +897,13 @@ footer .ft-center {
 }
 
 }
+/* @media screen and (min-width: 490px){
+   .pagination span {
+     height: 10px;
+     width: 10px;
+   }
+} */
+
 @media screen and (max-width: 450px){
   :root{
     ff-xs-fs: .55rem;
