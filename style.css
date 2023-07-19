@@ -204,7 +204,6 @@ header .fa-solid {
 }
 
 header nav .navbar{
-  --nav-h: ;
   
   background: var(--lg-bg-color);
   height: calc(100vh - var(--nav-h));
