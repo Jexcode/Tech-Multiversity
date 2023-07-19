@@ -516,6 +516,7 @@ header .navbar .nav-btn-fld .nav-btn:last-child:hover{
 .faculty-con .faculty-card .faculty-card-img img{
   aspect-ratio: 1/1;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
   outline: 4px solid var(--main-secondary-color);
   outline-offset: 5px;
   margin: 4% auto;
