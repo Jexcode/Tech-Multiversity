@@ -210,7 +210,8 @@ header nav .navbar{
   flex-direction: column;
   padding: 0;
   position: fixed;
-  top: var(--nav-h);
+ /* top: var(--nav-h); */
+  top: 0;
   right: -100vw;
   list-style: none;
   transition: all 1s ease;
