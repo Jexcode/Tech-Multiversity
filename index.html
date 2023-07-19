@@ -423,6 +423,13 @@
       const content = item.querySelector(".answer");
     
       title.addEventListener("click", () => {
+      
+        title.addEventListener("click", () => {
+        accordionItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.querySelector(".answer").classList.remove("open");
+          }
+        });
         // Toggle the display of the content when the title is clicked
         content.classList.toggle("open");
       });
