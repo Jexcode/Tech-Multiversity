@@ -1,13 +1,13 @@
-
+console.log('Hello World!');
 // navBar
  const header =document.querySelector('#header').offsetHeight;
 const menuIcon = document.querySelector('#menuBtn');
 const menuBar = document.querySelector('#navBar');
-//const headerHeight = menuBar.style.setProperty('--nav-h', String(header).concat('px'));
+const headerHeight = menuBar.style.setProperty('--nav-h', String(header).concat('px'));
 const welCome = document.querySelector('#welcome');  
 const faCult = document.querySelector('#faculty');  
 
-
+console.log(header);
 
 function showMenu() {
   if (menuBar.style.right === '-100vw') {
@@ -105,7 +105,7 @@ setInterval(() => {
   currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
   showSlide();
   updatePagination();
-}, 10000);
+}, 15000);
 
 // Initial setup
 showSlide();
@@ -143,20 +143,20 @@ const updatePaginatioN = () => {
 };
 
 // Function to handle slide navigation
-const goToSlide1 = (slideIndex) => {
-  currentSlide1 = slideIndex;
+const goToSlide1 = (slide1Index) => {
+  currentSlide1 = slide1Index;
   showSlidE();
   updatePaginatioN();
 };
 
 // Event listeners for previous and next arrows
-prevArrow.addEventListener('click', () => {
+prevArrow1.addEventListener('click', () => {
   currentSlide1 = (currentSlide1 === 0) ? slides1.length - 1 : currentSlide1 - 1;
   showSlidE();
   updatePaginatioN();
 });
 
-nextArrow.addEventListener('click', () => {
+nextArrow1.addEventListener('click', () => {
   currentSlide1 = (currentSlide1 === slides1.length - 1) ? 0 : currentSlide1 + 1;
   showSlidE();
   updatePaginatioN();
@@ -165,8 +165,8 @@ nextArrow.addEventListener('click', () => {
 // Event listener for pagination dots
 pagination1.addEventListener('click', (e) => {
   if (e.target.classList.contains('dot1')) {
-    const dotIndex = Array.from(pagination1.children).indexOf(e.target);
-    goToSlide(dot1Index);
+    const dot1Index = Array.from(pagination1.children).indexOf(e.target);
+    goToSlide1(dot1Index);
   }
 });
 
@@ -177,7 +177,7 @@ sliderContainer1.addEventListener('touchstart', (e) => {
 
 sliderContainer1.addEventListener('touchend', (e) => {
   touchEndX1 = e.changedTouches[0].clientX;
-  handleSwipe();
+  handleSwipe1();
 });
 
 // Function to handle touch swipe
@@ -199,7 +199,7 @@ setInterval(() => {
   currentSlide1 = (currentSlide1 === slides1.length - 1) ? 0 : currentSlide1 + 1;
   showSlidE();
   updatePaginatioN();
-}, 10000);
+}, 15000);
 
 // Initial setup
 showSlidE();
