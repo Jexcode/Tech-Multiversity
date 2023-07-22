@@ -465,6 +465,8 @@ header .navbar .nav-btn-fld .nav-btn:last-child:hover{
 
 #faculty h3{
   margin: 2% auto;
+  width: 100%;
+  text-align: center;
 }
 
 .faculty-con{
